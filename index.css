@@ -21,6 +21,7 @@ body {
   background-color: cornflowerblue;
 }
 
+/* firstSection */
 header {
   max-width: 150px;
   display: flex;
@@ -51,6 +52,14 @@ header img {
   margin-bottom: 10px;
 }
 
+.menuBar-menu div:hover {
+  cursor: pointer;
+  color: brown;
+}
+.menuBar-menu div:active {
+  transform: scale(0.998);
+}
+
 .menuBar-contact {
   width: 100%;
   margin: 10px 0px 10px 0px;
@@ -62,6 +71,7 @@ header img {
   margin: 0px 0px 5px 0px;
 }
 
+/* secondSection */
 main {
   background-color: antiquewhite;
 }
