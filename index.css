@@ -17,7 +17,7 @@ body {
 .secondSection {
   width: 70%;
   height: 100vh;
-  position: relative;
+  /* position: relative; */
   background-color: cornflowerblue;
 }
 
@@ -73,13 +73,20 @@ header img {
 
 /* secondSection */
 main {
+  position: relative;
   background-color: antiquewhite;
+}
+
+.mainContent {
+  background-color: cadetblue;
+  margin-bottom: 10px;
+  height: 450px;
 }
 
 footer {
   width: 100%;
   position: absolute;
-  bottom: 0px;
+  bottom: -90px;
   display: flex;
   flex-direction: column;
   align-items: center;
