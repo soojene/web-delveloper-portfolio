@@ -10,8 +10,8 @@ body {
 
 .firstSection {
   width: 25%;
-  height: 75%;
-  background-color: coral;
+  height: 1390px;
+  /* background-color: coral; */
 }
 
 .secondSection {
@@ -23,11 +23,16 @@ body {
 
 /* firstSection */
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 35px;
   max-width: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
   margin: auto;
   background-color: blue;
 }
@@ -43,7 +48,7 @@ header img {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 10px 0px 10px 0px;
+  margin: 20px 0px 20px 0px;
   background-color: coral;
 }
 
