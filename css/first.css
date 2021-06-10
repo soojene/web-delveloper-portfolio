@@ -1,0 +1,53 @@
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 35px;
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: auto;
+  background-color: blue;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.menuBar-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px 20px 0px;
+  background-color: coral;
+}
+
+.menuBar-menu div {
+  background-color: thistle;
+  margin-bottom: 10px;
+}
+
+.menuBar-menu div:hover {
+  cursor: pointer;
+  color: brown;
+}
+.menuBar-menu div:active {
+  transform: scale(0.998);
+}
+
+.menuBar-contact {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  background-color: whitesmoke;
+}
+
+.menuBar-contact h6 {
+  font-weight: 300;
+  margin: 0px 0px 5px 0px;
+}

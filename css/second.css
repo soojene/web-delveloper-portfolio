@@ -1,0 +1,21 @@
+main {
+  position: relative;
+  background-color: antiquewhite;
+}
+
+.mainContent {
+  background-color: cadetblue;
+  margin-bottom: 10px;
+  height: 450px;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: -90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 0.5px black solid;
+  background-color: blueviolet;
+}
