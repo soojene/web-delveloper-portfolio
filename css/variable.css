@@ -1,5 +1,25 @@
 /* Theme color */
 
 :root {
-  --main-color: pink;
+  /* theme colors */
+  --main-pink: pink;
+  --light-pink: rgb(228, 179, 185);
+  --dark-pink: rgb(202, 79, 100);
+  --main-gray: gray;
+  --main-white: rgb(228, 227, 227);
+  -main-black: rgb(22, 22, 22);
+
+  /* font colors */
+  --main-font-color: whitesmoke;
+  --darkest-font-color: rgb(85, 85, 85);
+  --light-font-color: rgb(124, 127, 143);
+  --menu-font-color: rgb(107, 105, 105);
 }
+
+/* bluishgray and white
+b4b8ab
+153243
+284b63
+f4f9e9
+eef0eb 
+*/

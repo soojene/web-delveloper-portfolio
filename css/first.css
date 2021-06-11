@@ -10,7 +10,7 @@ header {
   padding-left: 5px;
   padding-right: 5px;
   margin: auto;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 header img {
@@ -25,17 +25,18 @@ header img {
   display: flex;
   flex-direction: column;
   margin: 20px 0px 20px 0px;
-  background-color: coral;
+  /* background-color: coral; */
 }
 
 .menuBar-menu div {
-  background-color: thistle;
+  /* background-color: thistle; */
+  color: var(--menu-font-color);
   margin-bottom: 10px;
 }
 
 .menuBar-menu div:hover {
   cursor: pointer;
-  color: brown;
+  color: whitesmoke;
 }
 .menuBar-menu div:active {
   transform: scale(0.998);
@@ -44,10 +45,12 @@ header img {
 .menuBar-contact {
   width: 100%;
   margin: 10px 0px 10px 0px;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
 }
 
-.menuBar-contact h6 {
+.menuBar-contact div {
+  color: var(--light-font-color);
+  font-size: 5px;
   font-weight: 300;
   margin: 0px 0px 5px 0px;
 }

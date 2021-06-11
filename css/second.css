@@ -1,18 +1,110 @@
 main {
   position: relative;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 
 .mainContent {
-  background-color: cadetblue;
   margin-bottom: 10px;
-  height: 450px;
+  /* height: 450px; */
+}
+
+.mainContent__title {
+  font-weight: bold;
+  color: var(--main-font-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ABOUTME BOX */
+.mainContent:first-of-type {
+  margin-top: 10px;
+  padding: 50px 0px 50px 0px;
+  background-color: var(--main-gray);
+}
+
+.mainContent__aboutMeBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* background-color: tomato; */
+}
+
+.mainContent__aboutMeBox .description {
+  font-weight: bolder;
+  color: var(--main-font-color);
+}
+
+.mainContent__aboutMeBox .description:last-child {
+  font-weight: 400;
+  background-color: skyblue;
+}
+
+/* PROJECTS BOX */
+.mainContent:nth-last-of-type(2) {
+  background-color: yellowgreen;
+}
+
+.mainContent__projectsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: thistle;
+}
+
+.projects__menuBox {
+  display: flex;
+  /* background-color: teal; */
+}
+.projects__menu {
+  font-size: 40%;
+  border: 0.3px solid var(--main-gray);
+  border-radius: 5px;
+  padding: 0px 5px 0px 5px;
+  margin: 0px 5px 0px 0px;
+  color: var(--main-font-color);
+  cursor: pointer;
+}
+
+.projects__menu:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.projects__itemBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-content: space-around; */
+  background-color: wheat;
+}
+
+.projects__items {
+  width: 120px;
+  height: 120px;
+  background-color: slategrey;
+  margin: 5px 5px 0px 5px;
+}
+
+.projects__items:hover {
+  cursor: pointer;
+  background-color: silver;
+}
+
+/* SKILLS BOX */
+.mainContent:last-of-type {
+  background-color: tomato;
+}
+
+.mainContent__skillsBox {
+  height: 300px;
+  background-color: rosybrown;
 }
 
 footer {
   width: 100%;
   position: absolute;
-  bottom: -90px;
+  bottom: -100px;
   display: flex;
   flex-direction: column;
   align-items: center;
