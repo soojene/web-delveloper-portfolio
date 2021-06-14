@@ -12,8 +12,10 @@
   /* font colors */
   --main-font-color: whitesmoke;
   --darkest-font-color: rgb(85, 85, 85);
-  --light-font-color: rgb(124, 127, 143);
+  --light-font-color: rgb(117, 118, 124);
   --menu-font-color: rgb(107, 105, 105);
+
+  /* animation */
 }
 
 /* bluishgray and white
