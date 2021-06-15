@@ -19,8 +19,9 @@ body {
   top: 35px;
   width: 25%;
   height: 370px;
+  margin-right: 10px;
   /* height: 1392px; */
-  /* background-color: coral; */
+  background-color: coral;
 }
 
 .secondSection {
@@ -29,5 +30,5 @@ body {
   /* height: 100vh; */
   /* padding: 0px 20px 0px 20px; */
   /* position: relative; */
-  /* background-color: cornflowerblue; */
+  background-color: rgb(241, 157, 31);
 }
