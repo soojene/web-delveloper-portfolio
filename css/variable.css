@@ -7,7 +7,7 @@
   --dark-pink: rgb(202, 79, 100);
   --main-gray: gray;
   --main-white: rgb(228, 227, 227);
-  -main-black: rgb(22, 22, 22);
+  --main-black: rgb(22, 22, 22);
 
   /* font colors */
   --main-font-color: whitesmoke;
@@ -16,12 +16,11 @@
   --menu-font-color: rgb(107, 105, 105);
 
   /* animation */
-}
 
-/* bluishgray and white
-b4b8ab
-153243
-284b63
-f4f9e9
-eef0eb 
-*/
+  /* bluishgray and white */
+  --color-main: #b4b8ab;
+  --color-mmain: #153243;
+  --color-sub: #284b63;
+  --color-subb: #f4f9e9;
+  --color-msnvd: #eef0eb;
+}
