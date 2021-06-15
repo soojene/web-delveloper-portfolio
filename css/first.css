@@ -51,6 +51,6 @@ header img {
 .menuBar-contact div {
   color: var(--light-font-color);
   font-size: 0.813em;
-  font-weight: bold;
+  font-weight: 300;
   margin: 0px 0px 5px 0px;
 }
