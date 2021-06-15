@@ -1,7 +1,7 @@
 header {
-  /* position: -webkit-sticky;
+  position: -webkit-sticky;
   position: sticky;
-  top: 35px; */
+  top: 35px;
   max-width: 150px;
   display: flex;
   flex-direction: column;

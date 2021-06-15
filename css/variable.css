@@ -5,7 +5,7 @@
   --light-font-color: rgb(117, 118, 124);
 
   /* ---Background Color--- */
-  --main-bg-color: pink;
+  --main-bg-color: whitesmoke;
 
   /* ------font size------- */
   --leftBar-menuFont-size: 20px;
@@ -30,8 +30,6 @@
   --footer-bg-color: rgba(112, 112, 112, 0.171);
   --footer-font-color: rgba(0, 0, 0, 0.281);
   --footer-upperBorder-color: rgba(0, 0, 0, 0.158);
-
-  /* animation */
 
   /* bluishgray and white */
   --color-subgray: #b4b8ab;
