@@ -15,7 +15,8 @@
   --mainContent-menuFont-size: 0.1rem;
 
   /* --first section color--*/
-  --leftBar-bg-color: rgba(187, 187, 187, 0.171);
+  --leftBar-bg-color: pink;
+  /* rgba(187, 187, 187, 0.171) */
   --leftBar-menuFont-color: rgb(107, 105, 105);
   --leftBar-contact-color: rgb(117, 118, 124);
   /* --------------- */
