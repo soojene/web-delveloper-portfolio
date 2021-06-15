@@ -23,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: tomato;
+  /* background-color: tomato; */
 }
 
 .description {
