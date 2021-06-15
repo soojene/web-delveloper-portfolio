@@ -39,13 +39,14 @@ body {
     max-width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0px 15px 0px 15px;
   }
   header img {
     width: 30px;
     height: 30px;
   }
   .menuBar-menu {
-    width: 55%;
+    width: 60%;
     flex-direction: row;
     justify-content: space-between;
     margin: 0px;
