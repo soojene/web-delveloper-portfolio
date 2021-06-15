@@ -1,19 +1,35 @@
 /* Theme color */
 
 :root {
-  /* theme colors */
-  --main-pink: pink;
-  --light-pink: rgb(228, 179, 185);
-  --dark-pink: rgb(202, 79, 100);
-  --main-gray: gray;
-  --main-white: rgb(228, 227, 227);
-  --main-black: rgb(22, 22, 22);
-
-  /* font colors */
-  --main-font-color: whitesmoke;
   --darkest-font-color: rgb(85, 85, 85);
   --light-font-color: rgb(117, 118, 124);
-  --menu-font-color: rgb(107, 105, 105);
+
+  /* ---Background Color--- */
+  --main-bg-color: pink;
+
+  /* ------font size------- */
+  --leftBar-menuFont-size: 20px;
+  --leftBar-contactFont-size: 0.813em;
+  --mainContent-titleFont-size: xx-large;
+  --mainContent-descriptionFont-size: 10px;
+  --mainContent-menuFont-size: 0.1rem;
+
+  /* --first section color--*/
+  --leftBar-bg-color: rgba(187, 187, 187, 0.171);
+  --leftBar-menuFont-color: rgb(107, 105, 105);
+  --leftBar-contact-color: rgb(117, 118, 124);
+  /* --------------- */
+  --topBar-bg-color: whitesmoke;
+  --topBar-font-color: pink;
+
+  /* --second section-- */
+  --mainContent-bg-color: #284b63;
+  --mainContent-font-color: whitesmoke;
+
+  /* ---------footer--------- */
+  --footer-bg-color: rgba(112, 112, 112, 0.171);
+  --footer-font-color: rgba(0, 0, 0, 0.281);
+  --footer-upperBorder-color: rgba(0, 0, 0, 0.158);
 
   /* animation */
 
