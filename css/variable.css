@@ -18,9 +18,9 @@
   /* animation */
 
   /* bluishgray and white */
-  --color-main: #b4b8ab;
-  --color-mmain: #153243;
-  --color-sub: #284b63;
-  --color-subb: #f4f9e9;
-  --color-msnvd: #eef0eb;
+  --color-subgray: #b4b8ab;
+  --color-main: #153243;
+  --color-submain: #284b63;
+  --color-sublightgray: #f4f9e9;
+  --color-sublightwhite: #eef0eb;
 }
