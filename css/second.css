@@ -1,4 +1,5 @@
 /* main {
+  width: 100%;
 } */
 
 .mainContent {
@@ -115,7 +116,7 @@
 .mainContent:last-of-type {
   padding: 20px 50px;
   margin-bottom: 0px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .mainContent__skillsBox {
@@ -152,7 +153,9 @@
   margin: 10px 20px;
   padding-bottom: 5px;
 }
-
+.mainContent__skillsBox ul {
+  padding-left: 25px;
+}
 .mainContent__skillsBox li {
   font-size: var(--mainContent-skillFont-size);
   text-transform: uppercase;
@@ -163,30 +166,30 @@
 
 footer {
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   /* bottom: -100px; */
-  margin-right: 20px;
+  /* margin-right: 20px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--footer-font-color);
-  font-size: 0.813em;
-  font-weight: 300;
+  font-size: var(--footer-font-size);
+  font-weight: 400;
   border-top: 0.5px var(--footer-upperBorder-color) solid;
   background-color: var(--footer-bg-color);
 }
 
 .footerTitle {
-  margin: 20px 0px 20px 0px;
-  font-size: 15px;
+  margin: 35px 0px;
+  font-size: var(--footer-titleFont-size);
   font-weight: bold;
 }
-footer div {
+/* footer div {
   margin-bottom: 5px;
-}
+} */
 
 footer div:last-child {
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 20px;
 }
 
