@@ -2,8 +2,9 @@
 } */
 
 .mainContent {
-  margin-bottom: 20px;
   min-height: 350px;
+  padding-top: 20px;
+  margin-bottom: 20px;
   background-color: var(--mainContent-bg-color);
 }
 
@@ -17,17 +18,16 @@
 
 /* ABOUTME BOX */
 .mainContent:first-of-type {
+  height: 90vh;
   margin-top: 10px;
-  padding: 50px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: tomato; */
 }
 
 .description {
-  font-size: 40px;
+  font-size: var(--mainContent-greetingFont-size);
   font-weight: bolder;
   text-align: center;
   color: var(--mainContent-font-color);
@@ -36,7 +36,8 @@
 
 .description:last-of-type {
   width: 80%;
-  font-size: var(--mainContent-descriptionFont-size);
+  font-size: var(--mainContent-lastDescriptionFont-size);
+  color: var(--mainContent-lastDescriptionFont-color);
   font-weight: 400;
   margin: 30px 57.08px 0px 57.08px;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
@@ -57,7 +58,8 @@
 
 .projects__menuBox {
   display: flex;
-  padding-left: 10px;
+  justify-content: space-evenly;
+  min-width: 500px;
   /* background-color: teal; */
 }
 .projects__menu {
@@ -65,23 +67,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: var(--mainContent-menuFont-size);
-  font-weight: 400;
-  border: 1.2px solid var(--light-font-color);
+  border: 1px solid var(--mainContent-font-color);
   border-radius: 5px;
-  padding: 0px 5px 0px 5px;
-  margin: 0px 10px 0px 0px;
-  color: var(--darkest-font-color);
-  margin-bottom: 10px;
+  padding: 5px 50px;
+  color: var(--mainContent-font-color);
+  font-weight: 600;
+  font-size: var(--mainContent-menuFont-size);
+  margin-top: 20px;
   cursor: pointer;
 }
 
 .projects__menu i {
-  margin: 3px 0px 3px 0px;
+  margin: 3px 0px;
 }
 
 .projects__menu:hover {
-  background-color: rgb(39, 39, 39);
+  background-color: var(--leftBar-bg-color);
   color: whitesmoke;
 }
 
@@ -89,18 +90,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 10px;
+  margin: 10px 0px;
 }
 
 .projects__items {
-  width: 120px;
-  height: 120px;
+  width: 300px;
+  /* height: auto; */
   margin: 5px 5px 5px 5px;
 }
 
 .projects__items img {
-  width: 120px;
-  height: 120px;
+  max-width: 100%;
+  max-height: 100%;
   opacity: 0.6;
   transition: 0.7s;
 }
@@ -112,12 +113,16 @@
 
 /* SKILLS BOX */
 .mainContent:last-of-type {
-  padding: 0px 10px 10px 10px;
+  padding: 20px 50px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 .mainContent__skillsBox {
   display: flex;
+  max-width: 800px;
   height: 300px;
+  margin: auto;
 }
 
 .mainSkill {
@@ -140,12 +145,20 @@
   height: 40%;
   background-color: thistle;
 }
+.skillTitle {
+  font-size: var(--mainContent-skillFont-size);
+  font-weight: bold;
+  border-bottom: rgba(67, 68, 68, 0.212) solid 1px;
+  margin: 10px 20px;
+  padding-bottom: 5px;
+}
 
 .mainContent__skillsBox li {
-  font-size: smaller;
+  font-size: var(--mainContent-skillFont-size);
   text-transform: uppercase;
-  list-style: none;
+  list-style: disc;
   margin-bottom: 5px;
+  text-align: start;
 }
 
 footer {

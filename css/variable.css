@@ -5,20 +5,23 @@
   --light-font-color: rgb(117, 118, 124);
 
   /* ---Background Color--- */
-  --main-bg-color: whitesmoke;
+  --main-bg-color: #fefbfb;
 
   /* ------font size------- */
-  --leftBar-menuFont-size: 20px;
-  --leftBar-contactFont-size: 0.813em;
-  --mainContent-titleFont-size: xx-large;
-  --mainContent-descriptionFont-size: 10px;
-  --mainContent-menuFont-size: 0.1rem;
+  --leftBar-menuFont-size: 25px;
+  --leftBar-contactFont-size: 1em;
+  --topBar-menuFont-size: 15px;
+  --mainContent-titleFont-size: 50px;
+  --mainContent-greetingFont-size: 90px;
+  --mainContent-lastDescriptionFont-size: 1.1em;
+  --mainContent-menuFont-size: 0.8em;
+  --mainContent-skillFont-size: 1.2em;
 
   /* --first section color--*/
   --leftBar-bg-color: pink;
   /* rgba(187, 187, 187, 0.171) */
   --leftBar-menuFont-color: rgb(107, 105, 105);
-  --leftBar-contact-color: rgb(117, 118, 124);
+  --leftBar-contact-color: rgb(137, 137, 138);
   /* --------------- */
   --topBar-bg-color: whitesmoke;
   --topBar-font-color: pink;
@@ -26,6 +29,7 @@
   /* --second section-- */
   --mainContent-bg-color: #284b63;
   --mainContent-font-color: whitesmoke;
+  --mainContent-lastDescriptionFont-color: rgba(245, 245, 245, 0.603);
 
   /* ---------footer--------- */
   --footer-bg-color: rgba(112, 112, 112, 0.171);
