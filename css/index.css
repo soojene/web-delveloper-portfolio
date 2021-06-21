@@ -25,6 +25,10 @@ body {
   /* margin-left: 5px; */
 }
 
+.menu--transparent {
+  display: none;
+}
+
 @media (max-width: 875px) {
   body {
     flex-direction: column;

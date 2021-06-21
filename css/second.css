@@ -84,7 +84,6 @@
 
 .projects__menu:hover {
   background-color: var(--leftBar-bg-color);
-  color: whitesmoke;
 }
 
 .projects__itemBox {
