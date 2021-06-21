@@ -5,7 +5,7 @@
 .mainContent {
   min-height: 350px;
   padding-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   background-color: var(--mainContent-bg-color);
 }
 
@@ -83,6 +83,9 @@
 }
 
 .projects__menu:hover {
+  background-color: var(--leftBar-bg-color);
+}
+.projects__menu:active {
   background-color: var(--leftBar-bg-color);
 }
 

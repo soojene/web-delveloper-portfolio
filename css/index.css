@@ -16,17 +16,16 @@ body {
 
 .firstSection {
   width: 18%;
+  transition: transform 1s ease-in;
 }
 
 .secondSection {
   width: 80%;
   padding: 0px 10px;
-  /* flex-shrink: 2; */
-  /* margin-left: 5px; */
 }
 
 .menu--transparent {
-  display: none;
+  visibility: hidden;
 }
 
 @media (max-width: 875px) {
