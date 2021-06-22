@@ -1,1 +1,2 @@
-console.log(window.innerWidth);//화면 가로 사이즈 
+// console.log(window.innerWidth);
+

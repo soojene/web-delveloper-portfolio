@@ -26,7 +26,10 @@
   align-items: center;
   justify-content: center;
 }
-
+.mainContent__aboutMeBox {
+  text-align: center;
+  padding: 100px 0px;
+}
 .description {
   font-size: var(--mainContent-greetingFont-size);
   font-weight: bolder;
@@ -40,7 +43,8 @@
   font-size: var(--mainContent-lastDescriptionFont-size);
   color: var(--mainContent-lastDescriptionFont-color);
   font-weight: 400;
-  margin: 30px 57.08px 0px 57.08px;
+  margin: auto;
+  margin-top: 30px;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
   /* background-color: skyblue; */
 }

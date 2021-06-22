@@ -12,7 +12,6 @@ header {
   margin: auto;
   /* background-color: var(--leftBar-bg-color); */
   background: url("../img/bg-pink.png") no-repeat center/cover;
-  /* background-color: transparent; */
 }
 
 header img {

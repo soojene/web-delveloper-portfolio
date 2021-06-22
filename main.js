@@ -1,5 +1,5 @@
 'use strict'
-
+const body = document.querySelector("body");
 const menuBar = document.querySelector(".firstSection");
 const menuitems = document.querySelector('.menuBar-menu');
 
@@ -15,11 +15,10 @@ const menuitems = document.querySelector('.menuBar-menu');
 document.addEventListener("scroll",() => {
     // disappearingMenu();
     if(window.innerWidth <= 875){
-        var scrollY = window.pageYOffset || document.documentElement.scrollTop;
-
-    scrollY <= this.lastScroll 
-    ? menuBar.classList.remove('menu--transparent')
-    : menuBar.classList.add('menu--transparent');
+        let scrollY = window.pageYOffset || document.documentElement.scrollTop; 
+        scrollY <= this.lastScroll ? 
+        menuBar.classList.remove('menu--transparent')
+        : menuBar.classList.add('menu--transparent');
 
     this.lastScroll = scrollY ;
     }
@@ -40,3 +39,30 @@ function handleMenuItems(e) {
 if (menuitems){
     menuitems.addEventListener("click",handleMenuItems);
 };
+
+//handle first mainBox opacity when scrolling 
+
+const aboutMeContents = document.querySelector(".mainContent__aboutMeBox");
+const aboutMeBoxHeight = aboutMeContents.getBoundingClientRect().height;
+if (aboutMeContents) {
+    document.addEventListener('scroll', () => {
+        let aboutMeopacity = 1-window.pageYOffset/aboutMeBoxHeight;
+        aboutMeContents.style.opacity = aboutMeopacity;
+    })
+};
+
+// arrow up button showing up when scolling down
+const arrowUpBtn = document.querySelector(".arrowUp");
+if (arrowUpBtn){
+    document.addEventListener('scroll', () => {
+        if(window.pageYOffset > aboutMeBoxHeight)  {
+            arrowUpBtn.classList.add('showing');
+        } else {
+            arrowUpBtn.classList.remove('showing');
+        }
+    })
+
+    arrowUpBtn.addEventListener("click", () => {
+        body.scrollIntoView({ behavior: 'smooth'});
+    })
+}

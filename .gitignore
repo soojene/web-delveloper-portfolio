@@ -1,0 +1,14 @@
+window.innerWidth, window.innerHeight:브라우저 안의 보여지는 화면 창 사이즈
+window.outterWidth, window.outerHeight:브라우저 겉의 창 사이즈
+
+document.documentElement.scrollTop, window.pageYOffset 호환성을 위해 (scrollY대신)
+
+transition:변화되기전 상태에서의 효과.(속성, 시간 타입)
+transform:rotate(#deg), rotateY(), scale(), translate()..etc.
+
+display:none-->completely disappear
+opacity:0 --->it dosenot show but able to be clicked 
+visibility:hidden-->dosenot show but it takes space where it placed. 
+# ponter-event
+display:none에는 애니매이션을 줄 수 없기때문에 opacity로 조절하고 opacity:0일때 pointer-event를 준다. 그럼 클릭이 되지 않게 해줌. 
+
