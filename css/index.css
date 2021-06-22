@@ -48,7 +48,7 @@ body {
 
 .showing {
   opacity: 1;
-  pointer-events: all;
+  pointer-events: auto;
 }
 
 @media (max-width: 875px) {
