@@ -12,3 +12,11 @@ visibility:hidden-->dosenot show but it takes space where it placed.
 # ponter-event
 display:none에는 애니매이션을 줄 수 없기때문에 opacity로 조절하고 opacity:0일때 pointer-event를 준다. 그럼 클릭이 되지 않게 해줌. 
 
+# filtering 3가지 방법
+변수.forEach((이름) => { 코드작성 });
+for(let 이름 of 변수){ 코드작성 };
+||| let 이름;
+    for(let i = 0; i<변수.length; i++){
+        이름 = 변수[i];
+        코드작성
+    }
