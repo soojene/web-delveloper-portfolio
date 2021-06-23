@@ -80,6 +80,7 @@
   font-size: var(--mainContent-menuFont-size);
   margin-top: 20px;
   cursor: pointer;
+  margin-right: 3px;
 }
 
 .projects__menu i {
@@ -91,6 +92,7 @@
 }
 .projects__menu:active {
   background-color: var(--leftBar-bg-color);
+  transform: scale(0.98);
 }
 
 .projects__itemBox {
@@ -98,12 +100,22 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 10px 0px;
+  transition: 1s ease-out all;
 }
 
 .projects__items {
   width: 300px;
   /* height: auto; */
   margin: 5px 5px 5px 5px;
+}
+
+.anima {
+  opacity: 0;
+  transform: scale(0.96);
+}
+
+.invisible {
+  display: none;
 }
 
 .projects__items img {

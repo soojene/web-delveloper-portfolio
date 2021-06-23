@@ -66,3 +66,33 @@ if (arrowUpBtn){
         body.scrollIntoView({ behavior: 'smooth'});
     })
 }
+
+// filtering project imgs when click project menu
+
+const projectMenuBtn = document.querySelector(".projects__menuBox");
+const projectsBox = document.querySelector(".projects__itemBox");
+const projets = document.querySelectorAll(".projects__items");
+console.log(projectsBox);
+if(projectMenuBtn){
+    projectMenuBtn.addEventListener("click", (e) => {
+        const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+        if (filter == null) {
+            return;
+        }
+
+        projectsBox.classList.add("anima");
+
+        setTimeout(() => {
+            projets.forEach((tomato) => {
+                if(filter !== tomato.dataset.type){
+                    tomato.classList.add("invisible");
+                } else {
+                    tomato.classList.remove("invisible");
+                }
+            });
+            
+            projectsBox.classList.remove("anima");
+
+        }, 300);
+    })
+};
