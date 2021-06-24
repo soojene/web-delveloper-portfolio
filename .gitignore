@@ -6,9 +6,11 @@ document.documentElement.scrollTop, window.pageYOffset 호환성을 위해 (scro
 transition:변화되기전 상태에서의 효과.(속성, 시간 타입)
 transform:rotate(#deg), rotateY(), scale(), translate()..etc.
 
+# display VS visibility
 display:none-->completely disappear
 opacity:0 --->it dosenot show but able to be clicked 
 visibility:hidden-->dosenot show but it takes space where it placed. 
+
 # ponter-event
 display:none에는 애니매이션을 줄 수 없기때문에 opacity로 조절하고 opacity:0일때 pointer-event를 준다. 그럼 클릭이 되지 않게 해줌. 
 
@@ -20,3 +22,18 @@ for(let 이름 of 변수){ 코드작성 };
         이름 = 변수[i];
         코드작성
     }
+
+# 변수와 프로퍼티 차이 
+const a = 1;
+this.b = "test";
+this를 통해서 b를 선언하게 되면, b 는 해당 객체의 프로퍼티가 되게 된다. 단순하게 var로 선언하면 변수, this 로 선언하면 프로퍼티 라고한다.
+
+var setMyName = function( value ){
+  var name = value;
+  this.name = value;
+};
+var setName = new setMyName( "kazikai" );
+console.log( setName.name ); //kazikai
+
+위 코드에서 발생하는 name 은 var name 으로 저장된 값일까? this.name 으로 저장된 값일까?
+정답은 this.name 으로 저장된 값이다.  이유는 setName 이란 변수는 setMyName의 인스턴스를 통해 만들어진 객체이며, 해당 객체에서 this.name 이라고 선언된 name은 인스턴스로 만들어진 객체의 프로퍼티가 된다.

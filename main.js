@@ -1,4 +1,5 @@
 'use strict'
+
 const body = document.querySelector("body");
 const menuBar = document.querySelector(".firstSection");
 const menuitems = document.querySelector('.menuBar-menu');
@@ -11,18 +12,18 @@ const menuitems = document.querySelector('.menuBar-menu');
 //         menuBar.classList.remove('menu--transparent');
 //     }
 // };
+// let lastScroll = 0;
+// document.addEventListener("scroll",() => {
+//     // disappearingMenu();
+//     if(window.innerWidth <= 875){
+//         let scrollY = window.pageYOffset || document.documentElement.scrollTop; 
+//         scrollY <= lastScroll ? 
+//         menuBar.classList.remove('menu--transparent')
+//         : menuBar.classList.add('menu--transparent');
 
-document.addEventListener("scroll",() => {
-    // disappearingMenu();
-    if(window.innerWidth <= 875){
-        let scrollY = window.pageYOffset || document.documentElement.scrollTop; 
-        scrollY <= this.lastScroll ? 
-        menuBar.classList.remove('menu--transparent')
-        : menuBar.classList.add('menu--transparent');
-
-    this.lastScroll = scrollY ;
-    }
-});
+//     lastScroll = scrollY <= 0 ? 0 : scrollY; ;
+//     }
+// });
 
 // handle scrolling when click menu
 
@@ -72,7 +73,7 @@ if (arrowUpBtn){
 const projectMenuBtn = document.querySelector(".projects__menuBox");
 const projectsBox = document.querySelector(".projects__itemBox");
 const projets = document.querySelectorAll(".projects__items");
-console.log(projectsBox);
+
 if(projectMenuBtn){
     projectMenuBtn.addEventListener("click", (e) => {
         const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
