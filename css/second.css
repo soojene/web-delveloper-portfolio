@@ -3,10 +3,11 @@
 } */
 
 .mainContent {
-  min-height: 350px;
+  /* min-height: 350px; */
   padding-top: 20px;
   margin-bottom: 25px;
   background-color: var(--mainContent-bg-color);
+  /* height: 100vh; */
 }
 
 .mainContent__title {
@@ -19,7 +20,7 @@
 
 /* ABOUTME BOX */
 .mainContent:first-of-type {
-  height: 90vh;
+  height: 100vh;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -51,7 +52,8 @@
 
 /* PROJECTS BOX */
 .mainContent:nth-last-of-type(2) {
-  min-height: 450px;
+  padding: 60px 0px;
+  /* min-height: 450px; */
 }
 
 .mainContent__projectsBox {
@@ -132,7 +134,7 @@
 
 /* SKILLS BOX */
 .mainContent:last-of-type {
-  padding: 20px 50px;
+  padding: 60px 50px;
   margin-bottom: 0px;
   /* text-align: center; */
 }
