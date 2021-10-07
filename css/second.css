@@ -26,41 +26,45 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
 }
 .mainContent__aboutMeBox {
-  text-align: center;
+  width: 85%;
   padding: 100px 0px;
+  /* margin: auto; */
+  /* background-color: tomato; */
 }
 .description {
   font-size: var(--mainContent-greetingFont-size);
   font-weight: bolder;
-  text-align: center;
   color: var(--mainContent-font-color);
   animation: focus-in-expand 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+.description:first-of-type {
+  font-size: 2rem;
+}
 
 .description:last-of-type {
-  width: 80%;
   font-size: var(--mainContent-lastDescriptionFont-size);
   color: var(--mainContent-lastDescriptionFont-color);
   font-weight: 400;
-  margin: auto;
+  /* line-height: 30px; */
   margin-top: 30px;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
-  /* background-color: skyblue; */
+}
+.description:last-of-type div {
+  margin-bottom: 10px;
 }
 
 /* PROJECTS BOX */
 .mainContent:nth-last-of-type(2) {
   padding: 60px 0px;
-  /* min-height: 450px; */
 }
 
 .mainContent__projectsBox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: thistle; */
 }
 
 .projects__menuBox {
@@ -141,29 +145,30 @@
 
 .mainContent__skillsBox {
   display: flex;
-  max-width: 800px;
-  height: 300px;
+  flex-direction: row-reverse;
+  max-width: 600px;
+  height: 350px;
   margin: auto;
 }
 
-.mainSkill {
-  width: 60%;
+.trySkill {
+  width: 40%;
   height: 100%;
   background-color: whitesmoke;
 }
 
-.experienceSkill {
+.mainSkill {
   position: relative;
-  width: 40%;
+  width: 60%;
   height: 100%;
   background-color: wheat;
 }
 
-.trySkill {
+.experienceSkill {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 40%;
+  height: 60%;
   background-color: thistle;
 }
 .skillTitle {
@@ -178,7 +183,7 @@
 }
 .mainContent__skillsBox li {
   font-size: var(--mainContent-skillFont-size);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   list-style: disc;
   margin-bottom: 5px;
   text-align: start;
