@@ -10,4 +10,12 @@ window.onscroll = function(e) {
     }
     // console.log(`old:${window.lastScroll}`);
     this.lastScroll = this.scrollY;
-  }
+}
+
+//프로젝트 url open in new tab
+const attendanceProject = document.querySelector(".attendanceProject");
+if(attendanceProject){
+    attendanceProject.addEventListener("click", ()=>{
+        window.open("https://soo-attendance.herokuapp.com/");
+    })
+}

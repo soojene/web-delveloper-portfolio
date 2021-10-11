@@ -29,7 +29,7 @@ const menuitems = document.querySelector('.menuBar-menu');
 
 function handleMenuItems(e) {
     const menuName = e.target.dataset.name;
-    const target = e.target;
+    // const target = e.target;
     if (menuName == null){
         return;
     }
@@ -42,15 +42,36 @@ if (menuitems){
 };
 
 //handle first mainBox opacity when scrolling 
-
 const aboutMeContents = document.querySelector(".mainContent__aboutMeBox");
 const aboutMeBoxHeight = aboutMeContents.getBoundingClientRect().height;
+
+//header animation by scrolling
+const firstContent = document.querySelector("#AboutMe")
+const firstContentBottom =firstContent.getBoundingClientRect().bottom;
+const headerBox = document.querySelector("#headerBox");
+
+function headerHandler(){
+    if(window.pageYOffset < firstContentBottom && window.innerWidth > 875){
+        headerBox.classList.add("noHeader");
+    }else if (window.innerWidth < 875 || window.pageYOffset > firstContentBottom){
+        headerBox.classList.remove("noHeader");
+
+    }
+}
+if(window.innerWidth > 875){
+    headerBox.classList.add("noHeader");
+}
 if (aboutMeContents) {
     document.addEventListener('scroll', () => {
         let aboutMeopacity = 1-window.pageYOffset/aboutMeBoxHeight;
         aboutMeContents.style.opacity = aboutMeopacity;
+        headerHandler();
     })
+    window.addEventListener("resize", headerHandler);
 };
+
+
+
 
 // arrow up button showing up when scolling down
 const arrowUpBtn = document.querySelector(".arrowUp");

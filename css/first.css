@@ -1,38 +1,36 @@
 header {
-  position: -webkit-sticky;
   position: sticky;
-  top: 10px;
-  max-width: 280px;
-  min-height: 700px;
-  /* min-height: 90vh; */
+  top: 16%;
+  max-width: 230px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 0px 10px;
+  border: white 1.6px solid;
+  border-radius: 20px;
+  /* padding: 0px 0px; */
   margin: auto;
-  /* background-color: var(--leftBar-bg-color); */
-  background: url("../img/bg-pink.png") no-repeat center/cover;
+  background-color: rgba(255, 255, 255, 0.041);
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 55%, pink 100%); */
 }
 
 header img {
   width: 150px;
   width: 100%;
   height: auto;
-  margin-top: 0px;
   margin-bottom: 50px;
 }
 
 .menuBar-menu {
-  width: 100%;
+  /* width: 150px; */
   display: flex;
   flex-direction: column;
-  margin: 50px 0px;
+  /* margin: 50px 0px; */
   /* background-color: coral; */
 }
 
 .menuBar-menu div {
   /* background-color: thistle; */
+  /* text-align: center; */
   font-size: var(--leftBar-menuFont-size);
   color: var(--leftBar-menuFont-color);
   margin-bottom: 20px;
@@ -47,14 +45,23 @@ header img {
 }
 
 .menuBar-contact {
-  width: 100%;
-  margin: 40px 0px;
+  width: auto;
+  margin-top: 130px;
   /* background-color: whitesmoke; */
 }
 
-.menuBar-contact div {
-  color: var(--leftBar-contact-color);
-  font-size: var(--leftBar-contactFont-size);
+.menuBar-contact {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
   font-weight: 300;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+}
+.menuBar-contact a {
+  margin-bottom: 10px;
+  color: rgb(124, 124, 124);
+}
+.menuBar-contact a:hover {
+  color: aliceblue;
+  font-weight: bolder;
 }

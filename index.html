@@ -10,8 +10,8 @@
 </head>
 <body>
     <section class="firstSection">
-        <header>
-            <img src="img/selfie.jpeg" alt="">
+        <header id="headerBox">
+            <img src="img/selfie.png" alt="">
             <div class="menuBar-menu">
                 <div data-name="#AboutMe">
                     ABOUT ME
@@ -24,10 +24,10 @@
                 </div>
             </div>
             <div class="menuBar-contact">
-                <div>
+                <a href="mailto:sjene01@gmail.com">
                     <i class="far fa-envelope"></i>
                     sjene01@gmail.com
-                </div>
+                </a>
                 <a href="https://github.com/soojene">
                     <i class="fab fa-github"></i>
                     github.com/soojene
@@ -50,7 +50,7 @@
                             안녕하세요.
                         </div>
                         <div>
-                            저는 심리학을 전공하고 지금은 코딩의 길을 걷고 있는 신입 프론트엔트 개발자입니다.
+                            심리학을 전공하고 지금은 코딩를 배우고 있는 신입 프론트엔트 개발자입니다.
                         </div>
                         <div>
                             사용자의 편의성을 생각하며 코딩을 공부하고 있습니다.
@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mainContent" id="Projects">
+            <div class="mainContent projectContainer" id="Projects">
                 <div class="mainContent__title">
                     Projects
                 </div>
@@ -81,34 +81,39 @@
                         </div>
                     </div>
                     <div class="projects__itemBox">
-                        <div class="projects__items" data-type="mobile">
-                            <img src="img/projectimgs.jpeg">
+                        <div class="projects__items attendanceProject" data-type="mobile">
+                            <img src="img/attend.png">
+                            <div class="projects__description">
+                                <h4>출석 체크</h4>
+                                <p>멤버의 출석을 체크하고 지각과 결석에 따라 다음 모임 회비를 계산하고 밴드를 이용해서 결과를 공유합니다.</p>
+                                <h4>클릭하면 해당 웹으로 이동합니다.</h4>
+                            </div>
+                        </div>
+                        <div class="projects__items" data-type="back-end">
+                            <img src="img/webportfoli.png">
+                            <div class="projects__description">
+                                <h4>프로젝트 웹 포트폴리오</h4>
+                                <p>반응형 웹으로 스타일링하고 자바스크립트로 스크롤링 이벤 및 효과를 주어 제작하였습니다.</p>
+                                <h4></h4>
+                            </div>
                         </div>
                         <div class="projects__items" data-type="back-end">
                             <img src="img/projectimgs.jpeg">
-                        </div>
-                        <div class="projects__items" data-type="back-end">
-                            <img src="img/projectimgs.jpeg">
-                        </div>
-                        <div class="projects__items" data-type="back-end">
-                            <img src="img/projectimgs.jpeg">
+                            <div class="projects__description">
+                                프로젝트 설명
+                            </div>
                         </div>
                         <div class="projects__items" data-type="front-end">
                             <img src="img/projectimgs.jpeg">
+                            <div class="projects__description">
+                                프로젝트 설명
+                            </div>
                         </div>
-                        <div class="projects__items" data-type="front-end">
-                            <img src="img/projectimgs.jpeg">
-                        </div>
-                        <div class="projects__items" data-type="front-end">
-                            <img src="img/projectimgs.jpeg">
-                        </div>
-                        <div class="projects__items" data-type="front-end">
-                            <img src="img/projectimgs.jpeg">
-                        </div>
+                        
                     </div>
                 </div>
             </div>
-            <div class="mainContent" id="Skills">
+            <div class="mainContent skillContainer" id="Skills">
                 <div class="mainContent__title">
                     Skills
                 </div>
@@ -145,30 +150,27 @@
             </div>
         </main>
         <footer>
-            <div class="footerTitle"> 
+            <!-- <div class="footerTitle"> 
                 CONTACT
-            </div>
-            <div>
-                <!-- <i class="far fa-envelope"></i> -->
-                sjene01@gmail.com
-            </div>
-            <div>
+            </div> -->
+            <div id="footerContact">
+                <h3>Contact</h3>
+                <a href="mailto:sjene01@gmail.com">
+                    <i class="far fa-envelope"></i>
+                </a>
                 <a href="http://github.com/soojene">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
-            <!-- <div>
-                <i class="fas fa-envelope-square"></i>
-                <i class="fab fa-github-square"></i>
-            </div> -->
-            <div>
+            
+            <div id="footerCopyRight">
                 &copy 2021. SOOZZIN All rights reserved. 
             </div>
         </footer>
+        <div class="arrowUp">
+            <i class="fas fa-long-arrow-alt-up fa-2x"></i>
+        </div>
     </section>
-    <div class="arrowUp">
-        <i class="fas fa-long-arrow-alt-up fa-2x"></i>
-    </div>
     <script src="main.js"></script>
     <script src="checking.js"></script>
 </body>
