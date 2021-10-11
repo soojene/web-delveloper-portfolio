@@ -166,10 +166,10 @@
 
 /* SKILLS BOX */
 .mainContent:last-of-type {
-  height: 75vh;
+  /* height: 75vh; */
   justify-content: flex-start;
   padding-top: 150px;
-  /* margin: 50px 0px; */
+  padding-bottom: 190px;
 }
 
 .mainContent__skillsBox {
