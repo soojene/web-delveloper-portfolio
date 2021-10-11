@@ -52,6 +52,7 @@
 /* PROJECTS BOX */
 .mainContent:nth-last-of-type(2) {
   padding: 150px 0px;
+  margin-bottom: 80px;
   box-sizing: border-box;
 }
 
@@ -167,6 +168,7 @@
 .mainContent:last-of-type {
   height: 75vh;
   justify-content: flex-start;
+  padding-top: 150px;
   /* margin: 50px 0px; */
 }
 
