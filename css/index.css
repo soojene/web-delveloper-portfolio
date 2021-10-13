@@ -4,10 +4,8 @@
 @import "second.css";
 
 body {
-  /* height: 100%; */
   display: flex;
   justify-content: center;
-  /* color: rgb(95, 112, 126); */
   padding-top: 40px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -63,12 +61,6 @@ a {
   display: none;
 }
 
-/* @media (min-width: 875px) {
-  .description {
-    margin: 0px auto;
-  }
-} */
-
 @media (max-width: 875px) {
   body {
     flex-direction: column;
@@ -81,7 +73,7 @@ a {
     z-index: 1;
     width: 100%;
     padding: 0px;
-    padding-right: 30px;
+    /* padding-right: 30px; */
     box-sizing: border-box;
   }
   header {
@@ -121,6 +113,9 @@ a {
     left: 0px;
     width: 100%;
     padding: 15px;
+  }
+  .mainContent:first-of-type {
+    width: 90%;
   }
   .mainContent:nth-of-type(2),
   .mainContent:last-of-type {
