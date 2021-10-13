@@ -115,7 +115,8 @@ a {
     padding: 15px;
   }
   .mainContent:first-of-type {
-    width: 90%;
+    /* width: 90%; */
+    padding: 0px 15px;
   }
   .mainContent:nth-of-type(2),
   .mainContent:last-of-type {
