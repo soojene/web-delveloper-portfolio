@@ -1,11 +1,4 @@
-Portfolio Web
-
-- Responsively screen view 
-
-- filtering images when click button
-
-- change of navBar, button and contents when scrolling
-
-- Easy to change color and font using variableCSS
-
-- 
+### Soojene-aboutMe-Web
+- 웹개발을 하나씩 배워가며 채워가는 개인 이력 웹을 만들어 보았습니다. 
+- 반응형 웹으로 제작하였습니다. 
+- 자바스크립트 연습을 위해서 HTML/CSS 그리고 자바스크립트으로 작성되었습니다. 
